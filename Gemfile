@@ -59,3 +59,4 @@ end
 # Additions
 
 gem 'devise'
+gem 'devise-bootstrap-views'
