@@ -1,5 +1,5 @@
 {
-  "name": "finance-tracker-2020",
+  "name": "Complete_Finance_Tracker_2020",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
