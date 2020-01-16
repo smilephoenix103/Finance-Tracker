@@ -5,5 +5,5 @@ Rails 6 Finance Tracker from the Complete Ruby on Rails Developer course at
 
 ## Differences from Mashrur
 
-* I commit my files much more often than Mashrur. generally at the completion
-  of each lesson, at least.
+* I commit my files much more often than Mashrur suggests. generally at the
+  completion of each lesson, at least.

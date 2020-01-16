@@ -60,3 +60,4 @@ end
 
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'iex-ruby-client'
