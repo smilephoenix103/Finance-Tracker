@@ -3,7 +3,14 @@
 Rails 6 Finance Tracker from the Complete Ruby on Rails Developer course at
 [Udemy](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)
 
+## Progress
+
+  Lesson 229 - Javascript reposnses to invalid search results
+
 ## Differences from Mashrur
 
 * I commit my files much more often than Mashrur suggests. generally at the
   completion of each lesson, at least.
+
+ * I have styled the app a bit differently.
+ 
