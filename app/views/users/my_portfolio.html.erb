@@ -23,5 +23,10 @@
   <% end %>
 </div>
 
-<div id="results">
-</div>
+<div id="results"></div>
+
+<% if @tracked_stocks.empty? %>
+  <h5 class="text-center text-primary mt-3">You are not currently tracking any stocks</h5>
+<% else %>
+  <%= render 'stocks/list' %>
+<% end %>
