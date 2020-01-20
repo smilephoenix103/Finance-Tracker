@@ -21,4 +21,8 @@ class Stock < ApplicationRecord
       return nil
     end
   end
+
+  def self.check_db(symbol)
+    where(ticker: symbol).first
+  end
 end
