@@ -2,10 +2,6 @@
   "name": "complete-finance-tracker-2020",
   "version": "0.2.0",
   "private": true,
-  "engines": {
-      "node": "13.x",
-      "npm": "6.13.x"
-    },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
