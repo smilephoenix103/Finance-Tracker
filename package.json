@@ -1,6 +1,6 @@
 {
   "name": "complete-finance-tracker-2020",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
