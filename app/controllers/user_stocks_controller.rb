@@ -8,7 +8,7 @@ class UserStocksController < ApplicationController
       stock.save
     end
 
-    @user_stock = UserStock.create(user: current_user, stock: stock)
+    UserStock.create(user: current_user, stock: stock)
     flash[:notice] = "#{stock.name} was added to your portfolio"
     redirect_to my_portfolio_path
   end
