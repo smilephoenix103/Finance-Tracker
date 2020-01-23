@@ -1,0 +1,23 @@
+<div class="row justify-content-center">
+  <div class="col-9">
+    <table class="table table-bordered table-hover mb-3">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th class="actions-column" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @friends.each do |friend| %>
+        <tr>
+          <td><%= friend.full_name %></td>
+          <td>
+            <%= link_to 'Remove', friend_path(friend), method: :delete, data:
+                  { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-warning'%>
+          </td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
