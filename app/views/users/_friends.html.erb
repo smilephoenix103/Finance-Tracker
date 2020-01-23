@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-10">
+    <%= render 'layouts/messages' %>
+
+    <% if @users %>
+      <% @users.each do |user| %>
+        <div class="card friends-results-block bg-secondary text-white mb-3">
+          <div class="card-body">
+            <strong>Email address:</strong> <%= user.email %><br />
+            <strong>Name:</strong> <%= user.full_name %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

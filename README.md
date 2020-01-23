@@ -20,3 +20,7 @@ It's a free Heroku instance, so it'll take up to 30 seconds to load the first ti
 * I have styled the app a bit differently.
 
 * I have deployed to Heroku more often too.
+
+* Mashrur performs three separate SQL queries for users and then deduplicates the
+  results. It is much better to perform one query, which will return a set of results
+  with no duplicates.

@@ -1,5 +1,30 @@
 <h1 class="text-center">My friends</h1>
 
+<div class="search-area">
+  <h3>Search for friends</h3>
+
+  <%= form_tag search_user_path, remote: true, method: :get do %>
+    <div class="form-group row">
+      <div class="col-sm-9">
+        <%= text_field_tag :friend,
+            params[:friend],
+            placeholder: 'Name or email address',
+            autfocus: true,
+            class: 'form-control form-control-lg'
+        %>
+      </div>
+      <div class="col-sm-3">
+        <%= button_tag type: :submit, class: 'btn btn-success' do %>
+          <%= fa_icon 'search' %> Search
+        <% end %>
+      </div>
+    </div>
+
+  <% end %>
+</div>
+
+<div id="results"></div>
+
 <% if @friends.empty? %>
   <h5 class="text-center text-primary mt-3">You don't currently have any friendships</h5>
 <% else %>

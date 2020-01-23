@@ -30,4 +30,12 @@ class User < ApplicationRecord
 
     stocks.where(id: stock.id).exists?
   end
+
+  def self.search(friend)
+    friend = "%#{friend.strip}%"
+    users = where('email LIKE ? OR first_name LIKE ? OR last_name LIKE ?', friend, friend, friend)
+    return nil if users.empty?
+
+    users
+  end
 end
