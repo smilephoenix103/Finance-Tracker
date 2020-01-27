@@ -1,0 +1,20 @@
+<h2><%= @user.full_name %> profile</h2>
+
+<h4>Email address: <%= @user.email %></h4>
+
+<% if current_user.friends_with? @user.id %>
+  <h4>
+    <span class="badge badge-info">
+      You are following <%= @user.first_name %>
+    </span>
+  </h4>
+<% else %>
+  <%= link_to 'Follow', friendships_path(user: @user),
+              method: :post, class: 'btn btn-info' %>
+<% end %>
+
+<% if @tracked_stocks.empty? %>
+  <h5 class="text-center text-primary mt-3"><%= @user.first_name %> is not currently tracking any stocks</h5>
+<% else %>
+  <%= render 'stocks/list' %>
+<% end %>

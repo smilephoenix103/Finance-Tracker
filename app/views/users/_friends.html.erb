@@ -9,13 +9,14 @@
             <strong>Name:</strong> <%= user.full_name %><br />
             <strong>Email address:</strong> <%= user.email %><br />
             <div class="friend-actions">
-              <%= link_to 'View profile', '#', class: 'btn btn-sm btn-info mr-2' %>
+              <%= link_to 'View profile', user, class: 'btn btn-sm btn-info mr-2' %>
               <% if current_user.friends_with? user.id %>
                 <span class="badge badge-info text-wrap" style="width: 10rem">
-                You are already friends with <%= user.first_name %>
+                  You are following <%= user.first_name %>
                 </span>
               <% else %>
-                <%= link_to 'Follow', friendships_path(user: user), method: :post, class: 'btn btn-sm btn-info' %>
+                <%= link_to 'Follow', friendships_path(user: user),
+                            method: :post, class: 'btn btn-sm btn-info' %>
               <% end %>
             </div>
           </div>

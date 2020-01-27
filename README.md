@@ -1,6 +1,7 @@
 # Complete-Finance-Tracker-2020
 
-Rails 6 Finance Tracker from the Complete Ruby on Rails Developer course at
+Rails 6 Finance Tracker from the Complete Ruby on Rails Developer course
+by Mashrur Hossain at
 [Udemy](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)
 
 ## Deployed version
@@ -10,7 +11,7 @@ It's a free Heroku instance, so it'll take up to 30 seconds to load the first ti
 
 ## Progress
 
-  Lesson 238 - Display friends list
+  Lesson 246 - App complete
 
 ## Differences from Mashrur
 

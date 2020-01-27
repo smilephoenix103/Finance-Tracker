@@ -16,7 +16,7 @@ class User < ApplicationRecord
     'Anonymous'
   end
 
-  def can_track_stock symbol
+  def can_track_stock? symbol
     under_stock_limit? && !stock_already_tracked?(symbol)
   end
 

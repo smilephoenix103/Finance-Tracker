@@ -5,7 +5,7 @@
         <tr>
           <th class="email-column" scope="col">Email Address</th>
           <th scope="col">Name</th>
-          <th class="actions-column" scope="col">Actions</th>
+          <th class="friend-actions-column" scope="col">Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -14,8 +14,9 @@
           <td><%= friend.email %></td>
           <td><%= friend.full_name %></td>
           <td>
-            <%= link_to 'Stop following', friendship_path(friend), method: :delete, data:
-                  { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-warning'%>
+            <%= link_to 'View profile', friend, class: 'btn btn-sm btn-info mr-2'%>
+            <%= link_to 'Stop following', friendship_path(friend), method: :delete,
+                        data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-warning'%>
           </td>
         </tr>
       <% end %>
