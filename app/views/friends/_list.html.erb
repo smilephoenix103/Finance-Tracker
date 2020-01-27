@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-10">
+  <div class="col-11">
     <table class="table table-bordered table-hover">
       <thead>
         <tr>
@@ -14,7 +14,7 @@
           <td><%= friend.email %></td>
           <td><%= friend.full_name %></td>
           <td>
-            <%= link_to 'Stop following', friend_path(friend), method: :delete, data:
+            <%= link_to 'Stop following', friendship_path(friend), method: :delete, data:
                   { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-warning'%>
           </td>
         </tr>

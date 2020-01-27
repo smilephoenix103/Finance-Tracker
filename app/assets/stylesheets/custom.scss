@@ -22,6 +22,12 @@ h1 {
   width: 9rem;
 }
 
+div.friend-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
 .ticker-column {
   width: 6rem;
 }
@@ -36,6 +42,7 @@ h1 {
 
 .email-column {
   width: 6rem;    /* aka as small as possible */
+  hyphens: none;
 }
 
 .number-cell {

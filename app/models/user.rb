@@ -31,6 +31,14 @@ class User < ApplicationRecord
     stocks.where(id: stock.id).exists?
   end
 
+  def filter_current_user(list)
+    list.reject { |user| user.id == self.id }
+  end
+
+  def friends_with?(id)
+    friends.where(id: id).exists?
+  end
+
   def self.search(friend)
     friend = "%#{friend.strip}%"
     users = where('email LIKE ? OR first_name LIKE ? OR last_name LIKE ?', friend, friend, friend)

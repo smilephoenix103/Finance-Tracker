@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 
     if friend.present?
       @users = User.search(friend)
+      @users = current_user.filter_current_user(@users)
 
       if @users
         respond_to do |format|
@@ -23,7 +24,7 @@ class UsersController < ApplicationController
       else
         respond_to do |format|
           flash.now[:alert] = "No users found with that name or email address"
-          format.js { render partial: 'users/result' }
+          format.js { render partial: 'users/friends_result' }
         end
       end
     else
